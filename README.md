@@ -1,6 +1,6 @@
 # Lab: Online Community Forum with Firestore
 
-![image of the finished product](./final-product.png)
+![Online Community Board](./community-board.png)
 
 ## The Goal
 
