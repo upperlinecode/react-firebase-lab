@@ -1,8 +1,6 @@
 import React from 'react';
-import firebase from "./Firestore";
 
-
-const Post = (props) => {
+const Post = () => {
   const component = new React.Component();
   
   component.state = {
@@ -14,12 +12,10 @@ const Post = (props) => {
   component.componentDidMount = () => {
     try {
       // add a line here to connect to your database
-      let db = firebase.firestore();
-
-      let postId = props.postID;
       
       // add a line here to indicate the collection and doc to retrieve
-      let documentToRead = db.collection('board').doc(postId);
+      
+      
       documentToRead.get()
         .then(doc => {
           if (!doc.exists) {
