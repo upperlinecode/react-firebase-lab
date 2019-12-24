@@ -29,8 +29,10 @@ In this lab, you'll build a community forum where users can make text-based post
 
 ```javascript
 // DocumentID is 1
-"user":"hipster2357",
-"post":"Farm-to-table drinking vinegar photo booth shaman. Food truck vexillologist skateboard flannel asymmetrical hell of portland gentrify. Blue bottle food truck affogato, aesthetic air plant succulents vice vaporware jean shorts fanny pack. +1 bushwick normcore intelligentsia edison bulb keffiyeh microdosing asymmetrical bespoke cardigan portland hell of banh mi.",
+"user":"hipster2357"
+
+"post":"Farm-to-table drinking vinegar photo booth shaman. Food truck vexillologist skateboard flannel asymmetrical hell of portland gentrify. Blue bottle food truck affogato, aesthetic air plant succulents vice vaporware jean shorts fanny pack. +1 bushwick normcore intelligentsia edison bulb keffiyeh microdosing asymmetrical bespoke cardigan portland hell of banh mi."
+
 "voteCount":0
 ```
 
