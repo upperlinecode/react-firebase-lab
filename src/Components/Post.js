@@ -10,31 +10,27 @@ const Post = () => {
   }
   
   component.componentDidMount = () => {
-    try {
-      // add a line here to connect to your database
-      
-      // add a line here to indicate the collection and doc to retrieve
-      
-      
-      documentToRead.get()
-        .then(doc => {
-          if (!doc.exists) {
-            console.log('No such document!');
-          } else {
-            // Store the result from firebase in state
-            component.setState({
-              user: doc.data().user,
-              post: doc.data().post,
-              voteCount: doc.data().voteCount
-            });
-          }
-        })
-        .catch(err => {
-          console.log('Error getting document', err);
-        });
-    } catch(err) {
-      console.log(err);
-    }
+    // So you don't have to rewrite this each time you perform a database action
+    
+    // Indicate the collection and doc to retrieve, e.g. let documentToRead = db.collection('name').doc('id')
+    
+    
+    documentToRead.get()
+      .then(doc => {
+        if (!doc.exists) {
+          console.log('No such document!');
+        } else {
+          // Store the result from firebase in state
+          component.setState({
+            user: doc.data().user,
+            post: doc.data().post,
+            voteCount: doc.data().voteCount
+          });
+        }
+      })
+      .catch(err => {
+        console.log('Error getting document', err);
+      });
   }
   
   component.render = () => {
