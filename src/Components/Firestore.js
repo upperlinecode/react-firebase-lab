@@ -1,5 +1,10 @@
 import firebase from 'firebase';
 
-// add your Firestore config variables here
+// fill in your Firestore config variables here
+var firebaseConfig = {
+    
+}
+
+firebase.initializeApp(firebaseConfig);
 
 export default firebase;
