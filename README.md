@@ -23,18 +23,19 @@ In this lab, you'll build a community forum where users can make text-based post
    3. Add a new Firebase project
    4. Integrate Firebase into your React app by making a `Firestore.js` Component.
    5. Set up a new database and collection called `community-board` in Firestore
-> Note: consult the "Setting Up Firestore" section from the lesson notes.
+> Note: consult the ["Getting Started with Firestore" lesson](https://github.com/upperlinecode/CS-and-the-City-Curriculum/blob/master/react/json-firebase-setup.md) notes if you need help.
 
 2. Input the data below to add an initial post to your `community-board` collection. This will be the basic structure of each post on the community board, but feel free to expand upon it with additional fields if you'd like.
 
 ```javascript
 // DocumentID is 1
-1: {
-    "user":"hipster2357",
-    "post":"Farm-to-table drinking vinegar photo booth shaman. Food truck vexillologist skateboard flannel asymmetrical hell of portland gentrify. Blue bottle food truck affogato, aesthetic air plant succulents vice vaporware jean shorts fanny pack. +1 bushwick normcore intelligentsia edison bulb keffiyeh microdosing asymmetrical bespoke cardigan portland hell of banh mi.",
-    "voteCount":0
-}
+"user":"hipster2357",
+"post":"Farm-to-table drinking vinegar photo booth shaman. Food truck vexillologist skateboard flannel asymmetrical hell of portland gentrify. Blue bottle food truck affogato, aesthetic air plant succulents vice vaporware jean shorts fanny pack. +1 bushwick normcore intelligentsia edison bulb keffiyeh microdosing asymmetrical bespoke cardigan portland hell of banh mi.",
+"voteCount":0
 ```
+
+> Note: consult the ["5. Set up a database and collection in Firestore" section in the "Getting Started with Firestore" lesson](https://github.com/upperlinecode/CS-and-the-City-Curriculum/blob/master/react/json-firebase-setup.md#5-set-up-a-database-and-collection-in-firestore) notes if you need help.
+
 Source: [hipster ipsum](https://hipsum.co/)
 
 3. Add 3 additional post documents to your collection using the structure above.
@@ -56,6 +57,7 @@ Source: [hipster ipsum](https://hipsum.co/)
 
 ```javascript
 let posts = [1,2,3,4].map((value) => {
+   // post id's must be strings
    let postID = value.toString();
    return <Post postID={postID} />
 });
