@@ -1,5 +1,6 @@
 import firebase from 'firebase';
 
+// fill in your Firestore config variables here
 var firebaseConfig = {
     apiKey: "AIzaSyD7ckd0JNPOI2pmgPNjWnbhMUrHq9iSxcg",
     authDomain: "community-161dc.firebaseapp.com",
@@ -9,7 +10,8 @@ var firebaseConfig = {
     messagingSenderId: "6767080484",
     appId: "1:6767080484:web:17afeb447fa25e84c614b1"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 export default firebase;

@@ -8,6 +8,7 @@ const App = () => {
   const component = new React.Component();
 
   let posts = [1,2,3,4].map((value) => {
+    // post id's need to be strings
     let postID = value.toString();
     return <Post postID={postID} />
   });
@@ -18,8 +19,6 @@ const App = () => {
         <Header />
         
         {posts}
-        
-        
         
         <div className="Posts">
           <p>No posts to show</p>
